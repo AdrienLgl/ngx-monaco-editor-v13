@@ -1,6 +1,6 @@
 {
   "name": "ngx-monaco-editor",
-  "version": "9.0.0",
+  "version": "13.0.0",
   "private": false,
   "description": "Monaco Code Editor for Angular",
   "keywords": [
@@ -13,6 +13,10 @@
     "angular 7",
     "angular 8",
     "angular 9",
+    "angular 10",
+    "angular 11",
+    "angular 12",
+    "angular 13",
     "monaco",
     "monaco-editor",
     "code",
@@ -36,7 +40,7 @@
     "tslib": "^2.0.0"
   },
   "peerDependencies": {
-    "@angular/common": "^10.0.0",
-    "@angular/core": "^10.0.0"
+    "@angular/common": "^13.0.0",
+    "@angular/core": "^13.0.0"
   }
 }

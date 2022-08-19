@@ -18,7 +18,7 @@
     "build:prod": "ng build --configuration production --project=editor-tester --base-href=editor-tester",
     "lint": "ng lint",
     "e2e": "ng e2e",
-    "build-editor": "npm run copy:readme && npm run copy:typings && ng build editor --configuration production && npm run copy:types && npm run copy:editor",
+    "build-editor": "npm run copy:readme && ng build editor --configuration production && npm run copy:types && npm run copy:editor",
     "npm-publish": "npm run build-editor && bash scripts/npm-publish",
     "copy:typings": "cp node_modules/monaco-editor/monaco.d.ts projects/editor/src/lib",
     "copy:types": "cp node_modules/monaco-editor/monaco.d.ts dist/editor",
