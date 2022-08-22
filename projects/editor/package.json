@@ -1,6 +1,6 @@
 {
-  "name": "ngx-monaco-editor",
-  "version": "9.0.0",
+  "name": "ngx-monaco-editor-v13",
+  "version": "12.0.0",
   "private": false,
   "description": "Monaco Code Editor for Angular",
   "keywords": [
@@ -25,10 +25,10 @@
   ],
   "repository": {
     "type": "git",
-    "url": "https://github.com/atularen/ngx-monaco-editor.git"
+    "url": "https://github.com/AdrienLgl/ngx-monaco-editor-v13.git"
   },
   "bugs": {
-    "url": "https://github.com/atularen/ngx-monaco-editor/issues"
+    "url": "https://github.com/AdrienLgl/ngx-monaco-editor-v13/issues"
   },
   "license": "MIT",
   "author": "Atul Kumar",
