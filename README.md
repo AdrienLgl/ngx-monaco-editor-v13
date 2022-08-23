@@ -1,11 +1,5 @@
-# Monaco Editor Component for Angular 2 and above.
+# Monaco Editor Component for Angular 13
 
- - Angular <= 4: v3.x.x
- - Angular 5: v5.x.x
- - Angular 6: v6.x.x
- - Angular 7: v7.x.x
- - Angular 8: v8.x.x
- - Angular 9: v9.x.x
  - Angular 10: v10.x.x
  - Angular 11: v11.x.x
  - Angular 12: v12.x.x
@@ -15,49 +9,29 @@ Using this Module you can utilize the Monaco Editor as an Angular Component. Fee
 
 Supports all the options available in monaco-editor [Monaco Editor Options](https://microsoft.github.io/monaco-editor/api/interfaces/monaco.editor.ieditorconstructionoptions.html)
 
+This repository is forked from [Ngx-Monaco-Editor](https://github.com/atularen/ngx-monaco-editor) project.
+
 ## Setup
 
 ### Installation
 
 Install from npm repository:
 ```
-npm install ngx-monaco-editor --save
+npm install ngx-monaco-editor-v13 --save
  ```
- 
-For angular version 6 use v6.x.x
-```
-npm install ngx-monaco-editor@6.0.0 --save
- ```
- 
-Add the glob to assets in `.angular-cli.json` schema - `projects.[project-name].architect.build` (to make monaco-editor lib available to the app):
+
+Add the glob to assets in `angular.json` schema - `projects.[project-name].architect.build` (to make monaco-editor lib available to the app):
 ```typescript
 {
   "options": {
     {
       "assets": [
-        { "glob": "**/*", "input": "node_modules/ngx-monaco-editor/assets/monaco", "output": "./assets/monaco/" }
+        { "glob": "**/*", "input": "node_modules/ngx-monaco-editor-v13/assets/monaco", "output": "./assets/monaco/" }
       ],
       ...
     }
     ...
   },
-  ...
-}
- ```
-
-
-For Angular 6 and below, add the glob to assets in `angular.json`
-```typescript
-{
-  "apps": [
-    {
-      "assets": [
-        { "glob": "**/*", "input": "../node_modules/ngx-monaco-editor/assets/monaco", "output": "./assets/monaco/" }
-      ],
-      ...
-    }
-    ...
-  ],
   ...
 }
  ```
@@ -70,7 +44,7 @@ import { NgModule } from '@angular/core';
 import { FormsModule } from '@angular/forms';
 
 import { AppComponent } from './app.component';
-import { MonacoEditorModule } from 'ngx-monaco-editor';
+import { MonacoEditorModule } from 'ngx-monaco-editor-v13';
 
 @NgModule({
   declarations: [
@@ -112,7 +86,7 @@ Include diff-editor in html with options.(eg: app.component.html)
 ```
 ```typescript
 import { Component } from '@angular/core';
-import { DiffEditorModel } from 'ngx-monaco-editor';
+import { DiffEditorModel } from 'ngx-monaco-editor-v13';
 
 @Component({
   selector: 'app-root',
@@ -179,7 +153,7 @@ import { NgModule } from '@angular/core';
 import { FormsModule } from '@angular/forms';
 import { BrowserModule } from '@angular/platform-browser';
 
-import { MonacoEditorModule, NgxMonacoEditorConfig } from 'ngx-monaco-editor';
+import { MonacoEditorModule, NgxMonacoEditorConfig } from 'ngx-monaco-editor-v13';
 import { AppComponent } from './app.component';
 
 const monacoConfig: NgxMonacoEditorConfig = {
@@ -211,7 +185,7 @@ import { NgModule } from '@angular/core';
 import { FormsModule } from '@angular/forms';
 import { BrowserModule } from '@angular/platform-browser';
 
-import { MonacoEditorModule, NgxMonacoEditorConfig } from 'ngx-monaco-editor';
+import { MonacoEditorModule, NgxMonacoEditorConfig } from 'ngx-monaco-editor-v13';
 import { AppComponent } from './app.component';
 
 export function onMonacoLoad() {
